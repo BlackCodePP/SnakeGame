@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SnakeGame</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./images/snake.ico">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="game-details">
+                <div class="score">Score: 0</div>
+                <div id="cooldownSkill" class="speed-enable"><img src="./images/Speed.png"" alt="cooldown"></div>
+                <div class="high-score">High Score: 30</div>
+                <button id="showInstructions" class="help-button">?</button>
+            </div>
+            <div class="play-board"></div>
+        </div>
+
+        <div id="modalGameover" class="modal-gameover">
+            <div class="game-over">
+                <h2>¡Game Over!</h2>
+            </div>
+            <button id="closeModalGameover">Play again</button>
+        </div>
+
+        <div id="instructionsModal" class="instructions-modal">
+            <div class="modal-content">
+                <h2>¡Bienvenido al juego del Snake!</h2>
+                <p>Usa las flechas del teclado o las teclas W, A, S, D para mover la serpiente.</p>
+                <p>El objetivo es comer la comida roja para crecer y obtener puntos.</p>
+                <p>Evita chocar contra los bordes del tablero o contra tu propio cuerpo.</p>
+                <p>Puedes activar una velocidad extra durante 4 segundos presionando la barra espaciadora. Esta habilidad tiene un tiempo de enfriamiento, el indicador de la habilidad en el centro del panel mostrara cuando vuelve a estar disponible.</p>
+            </div>
+            <button id="closeModal">Cerrar</button>
+        </div>
+
+        <script src="./js/snake.js"></script>
+
+    </body>
+
+</html>
