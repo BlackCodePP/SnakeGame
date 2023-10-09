@@ -13,8 +13,8 @@ body {
 }
 
 .wrapper {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 12px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -25,9 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background: #293447;
-    top: 12px;
-    position: fixed;
+    background: #293447;   
 }
 
 .game-details {
@@ -115,7 +113,7 @@ body {
     margin-bottom: 8px;
 }
 
-.instructions-modal button {
+#closeModalGameover, #closeModal {
     padding: 8px 12px;
     background-color: #68F235;
     border: none;
@@ -123,16 +121,6 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-
-.modal-gameover button {
-    padding: 8px 12px;
-    background-color: #68F235;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
 
 .help-button {
     position: absolute;
